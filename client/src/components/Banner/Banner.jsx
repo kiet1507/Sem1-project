@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
-import DataBanner from "./DataBanner";
 import "./Banner.scss";
+import DataBanner from "./DataBanner";
 
 const Banner = () => {
 
@@ -17,11 +17,6 @@ const Banner = () => {
         const newSlide = currentSlide === 0 ? slideLength - 1 : currentSlide - 1;
         setCurrentSlide(newSlide);
     };
-
-    const gotoSlide = (index) => {
-        setCurrentSlide(index);
-    }
-
 
     useEffect(() => {
 
@@ -40,7 +35,7 @@ const Banner = () => {
             <BsChevronCompactRight className="arrow next" onClick={nextSlide} />
             {DataBanner.map((slide, index) => {
                 return (
-                <div className={index === currentSlide ? "slide current" : "slide"}>
+                <div key={index} className={index === currentSlide ? "slide current" : "slide"}>
                     {index === currentSlide && (
                         <div className="slide-image">
                             <img src={slide.img_banner} alt={slide.alt} />

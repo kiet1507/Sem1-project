@@ -1,3 +1,4 @@
+import '../../../src/grid.scss';
 import "./footer.css";
 
 const Footer = () => {

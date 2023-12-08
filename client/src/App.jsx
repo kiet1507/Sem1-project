@@ -1,11 +1,11 @@
 import './App.css';
-import Gallery from './components/Gallery/Gallery';
+import Home from './pages/Home';
 
 const App = () => {
 
   return (
     <div id='app'>
-      <Gallery />
+      <Home />
     </div>
   );
 }
