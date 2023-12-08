@@ -1,0 +1,31 @@
+.header-brand {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 20px 0 5px 0;
+}
+
+.brands-container {
+    display: flex;
+    flex-wrap: wrap;
+    // align-items: center;
+    justify-content: center;
+}
+
+.inner-brand {
+    margin: 0.9rem;
+}
+
+.brand {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #381b1b15;
+    border-radius: 3px;
+}
+
+.brand img {
+    margin: 0 2px 0 2px ;
+}
+  
+  
