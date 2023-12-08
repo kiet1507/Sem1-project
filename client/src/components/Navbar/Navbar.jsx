@@ -2,6 +2,7 @@
 import React from 'react';
 import './Navbar.css';
 
+
 const Navbar = () => {
   return (
     <div>
@@ -9,7 +10,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <div className="navbar">
           <div className="logo-container">
-            <img src=".\image\Free_Sample_By_Wix.jpg" alt="Madam Boutique" className="logo" width="80px" height="35px" />  
+            <img src=".\image\Free_Sample_By_Wix.jpg" alt="Madam Boutique" className="logo" width="100px" height="auto" />  
           </div>
         </div>
 
