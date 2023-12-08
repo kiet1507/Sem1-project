@@ -10,7 +10,7 @@ body {
   .navbar-container {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(240, 239, 239);
+    background-color: rgb(247, 247, 247);
     width: 1280px;
     height:50px;
   }
@@ -76,4 +76,11 @@ body {
     margin-left: 5px;
     font-size: 14px;
   }
+
+  .menu_main {
+    display: flex;
+    list-style: none;
+  }
+
+  
   
