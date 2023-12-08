@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    row-gap: 24px;
 }
 
 .gallery-item {
@@ -11,4 +12,28 @@
     background: #F7F8F9;
     width: 100%;
     padding: 16px 40px;
+    row-gap: 16px;
+}
+
+.title__galleyry {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-transform: uppercase;
+    margin: 5rem 0;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.carousel-img {
+    width: 100%;
+}
+
+.carousel-img img {
+    width: 100%;
 }
