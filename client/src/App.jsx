@@ -1,13 +1,13 @@
-import './App.css'
-import Gallery from './components/Gallery/Gallery'
+import './App.css';
+import Gallery from './components/Gallery/Gallery';
 
-function App() {
+const App = () => {
 
   return (
     <div id='app'>
-      <Gallery/>
+      <Gallery />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
