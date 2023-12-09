@@ -1,87 +1,67 @@
 /* Navbar.css */
 
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(247, 247, 247);
-    width: 100%;
-    height:50px;
-    padding: 10px 0px;
-  }
-  
-  .navbar-container2 {
-    display: flex;
-    justify-content: space-around;
-    background-color: #333;
-    width: 100%;
-    height:50px;
-  }
+.navbar-container {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  background-color: rgb(247, 248, 249); 
+  padding: 10px; 
+  height: 60px;
+}
 
-  .navbar {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo-container {
-    padding: 10px;
-  }
-  
-  .logo {
-    height: 50px; /* Thay đổi chiều cao theo ý muốn */
-  }
-  
-  .navbar-links {
-    display: flex;
-  }
-  
-  .navbar a {
-    color: white;
-    text-decoration: none;
-    padding:0 35px;
-    display: flex;
-    align-items: center; /* Canh chỉnh thẻ a theo chiều dọc */
-  }
-  
-  .navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .search-cart-container {
-    display: flex;
-    align-items: center;
-    border-radius: 5% black;
-  }
-  
-  .search-input { 
-    padding: 10px;
-    margin-right: 10px;
-  }
-  
-  .cart-icon {
-    display: flex;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-  }
-  
-  .cart-count {
-    margin-left: 5px;
-    font-size: 14px;
-  }
+.logo-container img {
+  width: 150px;
+  height: 100px;
+  padding-top: 35px;
+}
 
-  .menu_main {
-    display: flex;
-    list-style: none;
-  }
+.search-cart-container {
+  display: flex;
+  align-items: center; 
+}
 
-  
-  
+.search-input {
+  margin-left: 10px; 
+  padding: 5px; 
+}
+
+
+.navbar-container2 {
+  background-color: #333; 
+  padding: 10px; 
+}
+
+.menu_main {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu_main li {
+  display: inline-block; 
+  margin-right: 10px; 
+}
+
+.menu_main a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 36px;
+  text-decoration: none;
+}
+
+.menu_main a:hover {
+  background-color: #ddd; /* Màu nền khi đưa chuột vào */
+  color: black;
+}
+
+.sub_menu {
+  display: flex; 
+  position: absolute;
+  background-color: #333;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.menu_main li:hover .sub_menu {
+  display: flex; 
+}
